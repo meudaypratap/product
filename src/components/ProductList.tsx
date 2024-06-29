@@ -17,7 +17,7 @@ const ProductList: React.FC = () => {
     }, [currentPage]);
 
     const fetchProducts = (page: number) => {
-        fetch(`http://localhost:8080/products/${page - 1}/${pageSize}`)  // Replace with your API endpoint
+        fetch(`${import.meta.env.VITE_API_BASE_URL}/products/${page - 1}/${pageSize}`)  // Replace with your API endpoint
             .then(response => response.json())
             .then(data => {
                 setProducts(data.content);

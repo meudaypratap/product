@@ -16,7 +16,7 @@ const CreateProduct: React.FC<CreateProductProps> = ({ onProductAdded }) => {
         e.preventDefault();
         const newProduct = { name, price: parseFloat(price), imageUrl, description, category };
 
-        fetch('http://localhost:8080/products', {  // Replace with your API endpoint
+        fetch('${import.meta.env.VITE_API_BASE_URL}/products', {  // Replace with your API endpoint
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newProduct),
