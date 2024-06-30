@@ -14,7 +14,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         }
     };
 
-    return (
+    return (totalPages > 1 &&
         <div className="pagination">
             <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
                 Previous

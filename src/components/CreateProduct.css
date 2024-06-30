@@ -16,6 +16,7 @@
   
   .add-product-form label {
     margin-bottom: 4px;
+    text-align: left;
   }
   
   .add-product-form input {
