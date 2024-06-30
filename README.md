@@ -10,7 +10,7 @@ Demo application build on React. This application provides following features:
 # Prerequisites
 1. Nodejs 20.15.0
 2. NPM 10.8.1
-3. product-api application should be running on localhost:8080
+3. [product-api](https://github.com/meudaypratap/product-api) application should be running on localhost:8080
 
 # Running the application locally
 
