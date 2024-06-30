@@ -37,29 +37,31 @@ const CreateProduct: React.FC<CreateProductProps> = ({ onProductAdded }) => {
     };
 
     return (
-        <form className="add-product-form" onSubmit={handleSubmit}>
-            <div>
-                <label>Product Name</label>
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-            </div>
-            <div>
-                <label>Product Category</label>
-                <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
-            </div>
-            <div>
-                <label>Product Description</label>
-                <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} required />
-            </div>
-            <div>
-                <label>Price</label>
-                <input type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value)} required />
-            </div>
-            <div>
-                <label>Image URL</label>
-                <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} required />
-            </div>
-            <button type="submit">Add Product</button>
-        </form>
+        <div className="add-product-form">
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Product Name</label>
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+                </div>
+                <div>
+                    <label>Product Category</label>
+                    <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
+                </div>
+                <div>
+                    <label>Product Description</label>
+                    <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} required />
+                </div>
+                <div>
+                    <label>Price</label>
+                    <input type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value)} required />
+                </div>
+                <div>
+                    <label>Image URL</label>
+                    <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} required />
+                </div>
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
     );
 };
 

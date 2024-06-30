@@ -36,3 +36,9 @@
   .add-product-form button:hover {
     background-color: #0056b3;
   }
+   
+  .sidebar {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 16px;
+  }
