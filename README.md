@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Product
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo application build on React. This application provides following features:
 
-Currently, two official plugins are available:
+1. Add new product with required details 
+2. List products with pagination
+3. Show product details
+4. Search product if not found suggested text shown to user so that new search query can be selected
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Prerequisites
+1. Nodejs 20.15.0
+2. NPM 10.8.1
+3. product-api application should be running on localhost:8080
 
-## Expanding the ESLint configuration
+# Running the application locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Go the application directory in terminal and run following commands
+1. `npm install`
 
-- Configure the top-level `parserOptions` property like this:
+2. `npm run dev`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Once the application is up and running open the application in browser http://localhost:5173/
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Application UI will look like following
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
